@@ -1,0 +1,450 @@
+# WordPress FF3L-Übersetzung
+# Copyright (C) 2015
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress FF3L-Übersetzung v1.0.0\n"
+"Report-Msgid-Bugs-To: Lorenz-IT <support@litd.de>\n"
+"POT-Creation-Date: 2015-05-18 11:17+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Philipp König <p.koenig@litd.de>\n"
+"Language-Team: Lorenz-IT <support@litd.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.7.6\n"
+"Language: de_DE\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ff3l.php:3
+msgid "Node Administration"
+msgstr "Knotenverwaltung"
+
+#: ff3l.php:8
+msgid "@Description"
+msgstr "Plugin zum Verwalten der Freifunk-Knoten. Um das Plugin verwenden zu "
+"können muss Git auf dem Server installiert sein."
+
+#: class/ff3l.php:56 class/ff3l.php:201 class/ff3l.php:208
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: class/ff3l.php:201
+msgid "Menu: Configuration"
+msgstr "Konfiguration"
+
+#: class/ff3l.php:60 class/ff3l.php:409 class/ff3l.php:411 model/config.php:69
+#: view/overview.php:24
+msgid "Overview"
+msgstr "Knotenübersicht"
+
+#: class/ff3l.php:124
+#, php-format
+msgid "Node not found: %s"
+msgstr ""
+"Es existiert kein Knoten mit dem Namen '%s'. Der Vorgang wurde abgebrochen."
+
+#: class/ff3l.php:132
+msgid "No node for deletetion selected"
+msgstr "Es wurde kein Knoten zum Löschen ausgewählt."
+
+#: class/ff3l.php:137
+msgid "No right to delete node."
+msgstr "Du hast nicht die erforderlichen Rechte, um einen Knoten zu löschen."
+
+#: class/ff3l.php:200 class/ff3l.php:205
+msgid "Administration"
+msgstr "Knotenverwaltung"
+
+#: class/ff3l.php:200 class/ff3l.php:205 class/ff3l.php:392
+msgid "Nodes"
+msgstr "Knoten"
+
+#: class/ff3l.php:73
+msgid "Map"
+msgstr "Knotenkarte"
+
+#: view/widget/map.php:9
+msgid "Goto map"
+msgstr "zur Knotenkarte"
+
+#: class/ff3l.php:201 class/ff3l.php:208
+msgid "Title: Configuration"
+msgstr "Konfiguration - Knotenverwaltung"
+
+#: class/ff3l.php:206
+msgid "Title: Overview"
+msgstr "Übersicht - Knotenverwaltung"
+
+#: class/ff3l.php:206
+msgid "Menu: Overview"
+msgstr "Übersicht"
+
+#: class/ff3l.php:207
+msgid "Title: Edit"
+msgstr "Knoten bearbeiten - Knotenverwaltung"
+
+#: class/ff3l.php:207 view/edit.php:10
+msgid "Add node"
+msgstr "Knoten hinzufügen"
+
+#: class/ff3l.php:411
+msgid "Help: Overview"
+msgstr ""
+"<p>In der Knotenübersicht werden alle Knoten, die im konfigurierten "
+"Git-Repository vorhanden sind, aufgelistet. Je nach vorhandener Berechtigung "
+"können die Knoten über das Anklicken der Auswahlbox bearbeitet, umbenannt "
+"oder gelöscht werden. Sollte keine Auswahlbox zu den Einträgen vorhanden "
+"sein, besitzt du keine ausreichenden Berechtigungen.</p>"
+"<strong>Sperrung</strong>"
+"<p>Um Fehler zu vermeiden werden die Knoten für andere Benutzer gesperrt, "
+"wenn du einen Knoten bearbeitest oder umbenennst. Sobald die Änderungen "
+"gespeichert wurden wird die Sperre entfernt und andere Benutzer können den "
+"Eintrag wieder bearbeiten. Gesperrte Einträge erkennt man an dem "
+"Schloss-Symbol, welches anstelle der Auswahlbox angezeigt wird.</p>"
+"<strong>Suche</strong>"
+"<p>Suchbegriffe, die über das Suchfeld eingegeben wurden, werden für den "
+"Knotennamen, die definierten Kontaktangaben (E-Mail, Telefon) und den "
+"VPN-Schlüssel angewendet. Im gefilterten Ergebnis werden außerdem die in der "
+"Liste vorkommenden Suchbegriffe farblich hinterlegt.</p>"
+
+#: class/ff3l.php:419 class/ff3l.php:421 model/config.php:71 view/edit.php:14
+#: view/overview.php:10
+msgid "Edit node"
+msgstr "Knoten bearbeiten"
+
+#: class/ff3l.php:422
+msgid "Help: Edit"
+msgstr ""
+"<p>In dieser Ansicht lassen sich neue Knoten anlegen, vorhandene Knoten "
+"umbenennen oder komplett bearbeiten. Beim Speichern wird der Knoten im Git-"
+"Repository aktualisiert, damit die Änderungen zeitnah auf den Gateway-"
+"Servern ankommt.</p>"
+"<p>Beim Speichern wird automatisch überprüft, ob der angegebene Name schon "
+"vergeben ist, oder der Schlüssel bereits für einen anderen Knoten verwendet "
+"wird.</p>"
+
+#: class/ff3l.php:431 class/ff3l.php:433
+msgid "Git-Repository"
+msgstr "Git-Repository"
+
+#: class/ff3l.php:434
+msgid "Help: Git"
+msgstr ""
+"<p>Die Knoten, die in der Übersicht angezeigt und bearbeitet werden können "
+"kommen aus dem gesetzten Git-Repository.</p>"
+"<p>Damit die Anwendung korrekt funktioniert, muss Apache auf dieses "
+"Verzeichnis Lese- und Schreibrechte besitzen, da ansonsten entweder die "
+"Liste nicht angezeigt werden kann, oder die Knoten nicht bearbeitet werden "
+"können.</p>"
+"<p>Sobald eine Änderung gemacht wurde, wird automatisch der entsprechende "
+"Git-Commit ausgeführt, damit die Gateways auch von der Änderung erfahren.</p>"
+
+#: class/ff3l.php:441 class/ff3l.php:443 view/config.php:41
+msgid "Rights"
+msgstr "Berechtigungen"
+
+#: class/ff3l.php:431
+msgid "Help: Rights"
+msgstr ""
+"<p>In der Tabelle werden alle Benutzerrollen und die dazugehörigen "
+"Berechtigungen dargestellt. Über die Auswahlboxen lassen sich diese für jede "
+"Benutzergruppe einzeln setzen.</p>"
+"<strong>Hinweise:</strong>"
+"<ul>"
+"<li>Das Recht die Knotenübersicht zu sehen wird automatisch gesetzt, sobald "
+"der Benutzergruppe irgendein weiteres Recht zugewiesen wird.</li>"
+"<li>Das Recht Knoten zu bearbeiten impliziert auch das Umbenennen eines "
+"Knotens. Das heißt, wenn ein Benutzer die Daten der Knoten (Kontaktangabe, "
+"Schlüssel, ...) bearbeiten kann, kann er dise zwangsläufig auch "
+"umbenennen.</li>"
+"</ul>"
+
+#: class/ff3l.php:478
+msgid "Access denied"
+msgstr "Du hast nicht die erforderlichen Rechte, um auf diese Seite zuzugreifen."
+
+#: class/ff3l.php:480
+#, php-format
+msgid "Activation Error minVersion: %s"
+msgstr "<strong>Die Knotenverwaltung benötigt mindestens WordPress %s.</strong> "
+"Bitte aktualisiere WordPress auf die neueste Version."
+
+#: class/ff3l.php:485
+msgid "Activation Error git"
+msgstr "<strong>Die Knotenverwaltung benötigt Git.</strong> "
+"Bitte installiere Git auf dem Webserver und versuche es erneut."
+
+#: class/nodeTable.php:96
+msgid "No nodes"
+msgstr "Keine Knoten verfügbar."
+
+#: class/nodeTable.php:105 view/widget.php:14
+msgid "Name"
+msgstr "Knotenname"
+
+#: class/nodeTable.php:106 view/edit.php:64
+msgid "Mail"
+msgstr "E-Mail"
+
+#: class/nodeTable.php:107 view/edit.php:77
+msgid "Phone"
+msgstr "Telefon"
+
+#: class/nodeTable.php:108 view/edit.php:47
+msgid "NodeKey"
+msgstr "Schlüssel"
+
+#: class/nodeTable.php:109
+msgid "Created"
+msgstr "Angelegt"
+
+#: class/nodeTable.php:110
+msgid "Changed"
+msgstr "Geändert"
+
+#: class/nodeTable.php:223
+#, php-format
+msgid "Edited by %1$s. Unlocked at %2$s"
+msgstr ""
+"Wird momentan von %1$s bearbeitet. Die Sperre wird entfernt, sobald die "
+"Änderungen gespeichert werden oder spätestens um %2$s Uhr."
+
+#: model/config.php:24
+msgid "Repository not found"
+msgstr ""
+"Das angegebene Git-Repository existiert entweder nicht, oder die gesetzten "
+"Berechtigungen sind falsch. Bitte stelle sicher, dass Apache Schreibrechte "
+"auf die Knoten in dem Verzeichnis besitzt."
+
+#: model/config.php:32
+msgid "Repository no git"
+msgstr ""
+"Das angegebene Verzeichnis ist kein Git-Repository. Bitte lege das Repository "
+"an, oder wähle ein anderes Verzeichnis aus."
+
+#: model/config.php:70 view/edit.php:18 view/overview.php:10
+msgid "Rename node"
+msgstr "Knoten umbenennen"
+
+#: model/config.php:72
+msgid "Create node"
+msgstr "Knoten anlegen"
+
+#: model/config.php:73 view/overview.php:14
+msgid "Remove node"
+msgstr "Knoten löschen"
+
+#: view/overview.php:45
+#, php-format
+msgid "Language paket not available: %s"
+msgstr "Für die aktuelle ausgewählte Sprache wurde das Plugin noch nicht übersetzt (%s)."
+
+#: view/overview.php:51
+msgid "Git status"
+msgstr "Git-Status"
+
+#: model/edit.php:21
+msgid "Node locked"
+msgstr ""
+"Der ausgewählte Knoten wird aktuell von einem anderen Benutzer bearbeitet. "
+"Bitte versuch es später erneut."
+
+#: model/edit.php:21 view/edit.php:93
+msgid "Goto overview"
+msgstr "zurück zur Übersicht"
+
+#: model/edit.php:54
+msgid "Error: No name"
+msgstr "Es wurde kein Knotenname angegeben."
+
+#: model/edit.php:58
+msgid "Error: Name already in use"
+msgstr "Es existiert bereits ein Knoten mit diesem Namen."
+
+#: model/edit.php:69
+msgid "Error: no nodeKey"
+msgstr "Es wurde kein Schlüssel angegeben."
+
+#: model/edit.php:76
+msgid "Error: invalid nodeKey"
+msgstr "Der angegebene Schlüssel ist ungültig."
+
+#: model/edit.php:85
+#, php-format
+msgid "Error: NodeKey already in use: %s"
+msgstr ""
+"Der angegebene Schlüssel wird bereits für den Knoten <strong>%s</strong> "
+"verwendet."
+
+#: model/edit.php:94
+msgid "Error: no mail"
+msgstr "Es wurde keine E-Mail-Adresse angegeben."
+
+#: model/edit.php:98
+msgid "Error: invalid mail"
+msgstr "Die E-Mail-Adresse ist ungültig."
+
+#: model/edit.php:106
+msgid "Error: invalid phone"
+msgstr ""
+"Die Telefonnummer ist ungültig (Erlaubt sind Zahlen, Plus- und Leerzeichen, "
+"sowie Bindestriche)."
+
+#: model/edit.php:155
+msgid "Error: Database update"
+msgstr "Beim Speichern ist ein unerwarteter Fehler aufgetreten. "
+"Bitte versuch es später erneut oder kontaktiere die Administration."
+
+#: model/edit.php:160
+msgid "Error: Git push: %s"
+msgstr "Beim Übermitteln der geänderten Daten an das Remote-Repository ist ein "
+"Fehler aufgetreten: <br />%s"
+
+#: view/config.php:7
+msgid "No repository message"
+msgstr ""
+"Die Knotenübersicht kann erst angezeigt werden, wenn ein gültiges Git-"
+"Repository angegeben wurde."
+
+#: view/config.php:16
+msgid "Configuration saved"
+msgstr "Die Konfiguration wurde erfolgreich gespeichert."
+
+#: view/config.php:21 view/edit.php:40
+msgid "General"
+msgstr "Allgemein"
+
+#: view/config.php:25
+msgid "Local Git-Repository"
+msgstr "lokales Git-Repository"
+
+#: view/config.php:27
+msgid "Git-Repository placeholder"
+msgstr "z.B. /var/www/vhosts/nodes/"
+
+#: view/config.php:28
+msgid "Git-Repository description"
+msgstr "Serverpfad zum lokalen Git-Repository in dem die Freifunkknoten liegen."
+
+#: view/config.php:32
+msgid "Map link"
+msgstr "Link zur Freifunk-Karte"
+
+#: view/config.php:34
+msgid "Map placeholder"
+msgstr "z.B. http://map.freifunk-3laendereck.net/"
+
+#: view/config.php:35
+msgid "Map description"
+msgstr ""
+"falls angegeben kann der Benutzer den jeweils ausgewählten Knoten auf der "
+"Karte ansehen."
+
+#: view/config.php:78
+msgid "Save configuration"
+msgstr "Konfiguration speichern"
+
+#: view/edit.php:27
+msgid "Error: Save failed"
+msgstr "Der Knoten konnte nicht gespeichert werden."
+
+#: view/edit.php:55
+msgid "NodeKey pattern"
+msgstr "Bitte gib den 64-stelligen hexadezimalen Schlüssel an."
+
+#: view/edit.php:61
+msgid "Contact"
+msgstr "Kontaktangabe"
+
+#: view/edit.php:92
+msgid "Save node"
+msgstr "Knoten speichern"
+
+#: view/notice.php:3
+msgid "Activation success"
+msgstr "Die Knotenverwaltung wurde erfolgreich aktiviert."
+
+#: view/notice.php:4
+msgid "Activation info"
+msgstr ""
+"Zukünftig ist die Verwaltungsoberfläche über das Menü links anwählbar. Bitte "
+"passe die Standard-Berechtigungen an und gib den Pfad zum lokalen "
+"Git-Repository an."
+
+#: view/notice.php:5
+#: view/overview.php:45
+#, php-format
+msgid "Multilingual plugin info: %s"
+msgstr ""
+"Sollten die Knoten von Administratoren verwaltet werden, die unterschiedliche "
+"Sprache sprechen kannst du beispielsweise das Wordpress-Plugin %s "
+"installieren. Damit kann jeder Benutzer seine gewünschte Sprache in seinem "
+"Profil definieren oder oben links auswählen."
+
+#: view/notice.php:11
+msgid "Change configuration"
+msgstr "Konfiguration anpassen"
+
+#: view/overview.php:18
+msgid "View on map"
+msgstr "auf der Karte anzeigen"
+
+#: view/overview.php:28 view/widget.php:62
+msgid "Add new node"
+msgstr "neuen Knoten hinzufügen"
+
+#: view/overview.php:32
+msgid "Search"
+msgstr "Suchen"
+
+#: view/overview.php:37
+msgid "Node saved"
+msgstr "Der Knoten wurde erfolgreich gespeichert."
+
+#: view/widget.php:3
+msgid "Total nodes"
+msgstr "Knoten insgesamt"
+
+#: view/widget.php:10
+msgid "Last changed:"
+msgstr "zuletzt geändert:"
+
+#: view/widget.php:58
+msgid "Goto node overview"
+msgstr "zur Knotenübersicht"
+
+#: class/ff3l.php:192
+msgid "Remove node confirm"
+msgstr "Möchstest du den ausgewählten Knoten wirklich löschen? Der gelöschte "
+"Knoten wird aus dem Git-Repository entfernt und kann nur über Git "
+"wiederhergestellt werden."
+
+#: class/ff3l.php:193
+msgid "Remove nodes confirm"
+msgstr "Möchstest du die ausgewählten Knoten wirklich löschen? Gelöschte "
+"Knoten werden aus dem Git-Repository entfernt und können nur über Git "
+"wiederhergestellt werden."
+
+#: class/ff3l.php:194
+msgid "Cancel"
+msgstr "abbrechen"
+
+#: class/ff3l.php:195
+msgid "Error"
+msgstr "Fehler"
+
+#: class/ff3l.php:196
+msgid "Close"
+msgstr "schließen"
+
+#: class/ff3l.php:318
+msgid "Invalid key"
+msgstr "ungültiger Schlüssel"

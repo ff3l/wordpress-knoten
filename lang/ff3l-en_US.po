@@ -1,0 +1,431 @@
+# WordPress FF3L-Übersetzung
+# Copyright (C) 2015
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress FF3L-Übersetzung v1.0.0\n"
+"Report-Msgid-Bugs-To: Lorenz-IT <support@litd.de>\n"
+"POT-Creation-Date: 2015-05-18 11:17+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Philipp König <p.koenig@litd.de>\n"
+"Language-Team: Lorenz-IT <support@litd.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.7.6\n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ff3l.php:3
+msgid "Node Administration"
+msgstr "Node Administration"
+
+#: ff3l.php:8
+msgid "@Description"
+msgstr "Plugin to manage the Freifunk-Nodes. To use this plugin you need to "
+"have Git installed on the server."
+
+#: class/ff3l.php:56
+msgid "Configuration"
+msgstr "Configuration"
+
+#: class/ff3l.php:201 class/ff3l.php:208
+msgid "Menu: Configuration"
+msgstr "Configuration"
+
+#: class/ff3l.php:60 class/ff3l.php:409 class/ff3l.php:411 model/config.php:69
+#: view/overview.php:24
+msgid "Overview"
+msgstr "Node Overview"
+
+#: class/ff3l.php:124
+#, php-format
+msgid "Node not found: %s"
+msgstr ""
+"There is no node with the name '%s'. The process has been cancelled."
+
+#: class/ff3l.php:132
+msgid "No node for deletetion selected"
+msgstr "No node for deletetion selected."
+
+#: class/ff3l.php:137
+msgid "No right to delete node."
+msgstr "You do not have the required permissions to remove a node."
+
+#: class/ff3l.php:200 class/ff3l.php:205
+msgid "Administration"
+msgstr "Node Administration"
+
+#: class/ff3l.php:200 class/ff3l.php:205 class/ff3l.php:392
+msgid "Nodes"
+msgstr "Nodes"
+
+#: class/ff3l.php:73
+msgid "Map"
+msgstr "Node Map"
+
+#: view/widget/map.php:9
+msgid "Goto map"
+msgstr "Goto Node Map"
+
+#: class/ff3l.php:201 class/ff3l.php:208
+msgid "Title: Configuration"
+msgstr "Configuration - Node Administration"
+
+#: class/ff3l.php:206
+msgid "Title: Overview"
+msgstr "Overview - Node Administration"
+
+#: class/ff3l.php:206
+msgid "Menu: Overview"
+msgstr "Overview"
+
+#: class/ff3l.php:207
+msgid "Title: Edit"
+msgstr "Edit Node - Node Administration"
+
+#: class/ff3l.php:207 view/edit.php:10
+msgid "Add node"
+msgstr "Add Node"
+
+#: class/ff3l.php:411
+msgid "Help: Overview"
+msgstr ""
+"<p>In the Node Overview you can see all nodes, which are available in the "
+"configured Git-Repository. According to the given permissions you can edit, "
+"rename or remove the nodes by clicking on the checkbox. If there is no "
+"checkbox for the entries, you do not have enough permissions to change "
+"the nodes.</p>"
+"<strong>Locking</strong>"
+"<p>To prevent errors the nodes automatically get locked, when you edit or "
+"rename an entry. Once you saved the changes the locking will be removed so "
+"other users can edit the entry again. Locked entries have an Lock-Icon instead "
+"of a checkbox.</p>"
+"<strong>Search</strong>"
+"<p>Search terms, which are entered through the search field are matched "
+"against the node names, the defined contact information and the VPN-Key. "
+"The matches will be highlighted in the result list.</p>"
+
+#: class/ff3l.php:419 class/ff3l.php:421 model/config.php:71 view/edit.php:14
+#: view/overview.php:10
+msgid "Edit node"
+msgstr "Edit Node"
+
+#: class/ff3l.php:422
+msgid "Help: Edit"
+msgstr ""
+"<p>In this interface you can add new nodes or edit respectively rename "
+"existant entries. After you have saved the changes the node will be updated "
+"in the Git-Repository, so the changes will be available on the gateway "
+"servers contemporary.</p>"
+"<p>Upon saving an entry, there will be automatic checks to ensure that the "
+"given name and key are not used yet and the input itself is valid.</p>"
+
+#: class/ff3l.php:431 class/ff3l.php:433
+msgid "Git-Repository"
+msgstr "Git-Repository"
+
+#: class/ff3l.php:434
+msgid "Help: Git"
+msgstr ""
+"<p>All the nodes of the overview are located in the configured "
+"Git-Repository.</p>"
+"<p>To ensure that the application works properly, Apache has to have read "
+"and write permissions for that directory. Otherwise the list on the overview "
+"page can not be displayed or the nodes can not be edited.</p>"
+"<p>If you edit or create a node, an automatically Git commit will be "
+"performed, so the gateway server can see the changes you made contemporary.</p>"
+
+#: class/ff3l.php:441 class/ff3l.php:443 view/config.php:41
+msgid "Rights"
+msgstr "Rights"
+
+#: class/ff3l.php:431
+msgid "Help: Rights"
+msgstr ""
+"<p>In the table you can see a list of all user roles and their corresponding "
+"permissions. With the chechboxes you can edit those permissions rolewise.</p>"
+"<strong>Notices:</strong>"
+"<ul>"
+"<li>If you set any permission to a role, the view permission will be set "
+"automatically.</li>"
+"<li>If an user role has the permission to edit a node, the members of this "
+"role can rename them, too.</li>"
+"</ul>"
+
+#: class/ff3l.php:478
+msgid "Access denied"
+msgstr "You do not have the required permissions to access this page."
+
+#: class/ff3l.php:480
+#, php-format
+msgid "Activation Error minVersion: %s"
+msgstr "<strong>The Node Administration requires at least Wordpress %s.</strong> "
+"Please update to the newest version."
+
+#: class/ff3l.php:485
+msgid "Activation Error git"
+msgstr "<strong>The Node Administration requires Git to be installed.</strong> "
+"Please install the Git package on your webserver."
+
+#: class/nodeTable.php:96
+msgid "No nodes"
+msgstr "No Nodes available."
+
+#: class/nodeTable.php:105 view/widget.php:14
+msgid "Name"
+msgstr "Node Name"
+
+#: class/nodeTable.php:106 view/edit.php:64
+msgid "Mail"
+msgstr "E-Mail"
+
+#: class/nodeTable.php:107 view/edit.php:77
+msgid "Phone"
+msgstr "Phone"
+
+#: class/nodeTable.php:108 view/edit.php:47
+msgid "NodeKey"
+msgstr "Key"
+
+#: class/nodeTable.php:109
+msgid "Created"
+msgstr "Created"
+
+#: class/nodeTable.php:110
+msgid "Changed"
+msgstr "Changed"
+
+#: class/nodeTable.php:223
+#, php-format
+msgid "Edited by %1$s. Unlocked at %2$s"
+msgstr ""
+"The node is currently edited by %1$s. If the changes will be saved, or not "
+"later than %2$s hrs. the node will be automatically unlocked."
+
+#: model/config.php:23
+msgid "Repository not found"
+msgstr ""
+"The given Git-Repository does not exists or the file permissions are wrong. "
+"Please asure apache can write into this directory and the node files inside."
+
+#: model/config.php:32
+msgid "Repository no git"
+msgstr ""
+"The given directory is no Git-Repository. Please create the repository, or "
+"choose another directory."
+
+#: model/config.php:70 view/edit.php:18 view/overview.php:10
+msgid "Rename node"
+msgstr "Rename Node"
+
+#: model/config.php:72
+msgid "Create node"
+msgstr "Create Node"
+
+#: model/config.php:73 view/overview.php:14
+msgid "Remove node"
+msgstr "Remove Node"
+
+#: view/overview.php:45
+#, php-format
+msgid "Language paket not available: %s"
+msgstr "This plugin is not yet translated into the current language (%s)."
+
+#: view/overview.php:51
+msgid "Git status"
+msgstr "Git Status"
+
+#: model/edit.php:21
+msgid "Node locked"
+msgstr "Another user is currently editing this node. Please try again later."
+
+#: model/edit.php:21 view/edit.php:93
+msgid "Goto overview"
+msgstr "Goto Overview"
+
+#: model/edit.php:54
+msgid "Error: No name"
+msgstr "Please enter a name for the node."
+
+#: model/edit.php:58
+msgid "Error: Name already in use"
+msgstr "The given name is already in use. Please enter another."
+
+#: model/edit.php:69
+msgid "Error: no nodeKey"
+msgstr "Please enter the key for the node."
+
+#: model/edit.php:76
+msgid "Error: invalid nodeKey"
+msgstr "The given key is invalid. Please correct your input."
+
+#: model/edit.php:85
+#, php-format
+msgid "Error: NodeKey already in use: %s"
+msgstr ""
+"The given key is already in use by the node <strong>%s</strong>."
+
+#: model/edit.php:94
+msgid "Error: no mail"
+msgstr "Please enter an email address."
+
+#: model/edit.php:98
+msgid "Error: invalid mail"
+msgstr "The given email address is invalid. Please correct your input."
+
+#: model/edit.php:106
+msgid "Error: invalid phone"
+msgstr ""
+"The given phone number is invalid (permitted characters are numbers, plus-, "
+"minus and space-chars)."
+
+#: model/edit.php:155
+msgid "Error: Database update"
+msgstr "An unexpected error occured. "
+"Please try again later or contact the administration."
+
+#: model/edit.php:160
+msgid "Error: Git push: %s"
+msgstr "An error occured while submitting the changed values to the remote "
+"Repository: <br />%s"
+
+#: view/config.php:7
+msgid "No repository message"
+msgstr "The node overview will be available, if you enter a valid Git-Repository."
+
+#: view/config.php:16
+msgid "Configuration saved"
+msgstr "The configuration was saved successfully."
+
+#: view/config.php:21 view/edit.php:40
+msgid "General"
+msgstr "General"
+
+#: view/config.php:25
+msgid "Local Git-Repository"
+msgstr "Local Git-Repository"
+
+#: view/config.php:27
+msgid "Git-Repository placeholder"
+msgstr "e.g. /var/www/vhosts/nodes/"
+
+#: view/config.php:28
+msgid "Git-Repository description"
+msgstr "Server path to the local Git-Repository where the nodes are located."
+
+#: view/config.php:32
+msgid "Map link"
+msgstr "Link to the Freifunk-Map"
+
+#: view/config.php:34
+msgid "Map placeholder"
+msgstr "e.g. http://map.freifunk-3laendereck.net/"
+
+#: view/config.php:35
+msgid "Map description"
+msgstr "if defined the user can view the selected node on the map."
+
+#: view/config.php:78
+msgid "Save configuration"
+msgstr "Save Configuration"
+
+#: view/edit.php:27
+msgid "Error: Save failed"
+msgstr "Failed to save the node."
+
+#: view/edit.php:55
+msgid "NodeKey pattern"
+msgstr "Please enter the 64-place hexadecimal key."
+
+#: view/edit.php:61
+msgid "Contact"
+msgstr "Contact"
+
+#: view/edit.php:92
+msgid "Save node"
+msgstr "Save Node"
+
+#: view/notice.php:3
+msgid "Activation success"
+msgstr "The Node Administration was activated successfully."
+
+#: view/notice.php:4
+msgid "Activation info"
+msgstr ""
+"The administration interface is accessable via the left menu. Please "
+"configure the permissions and enter the path to the local Git-Repository."
+
+#: view/notice.php:5
+#: view/overview.php:45
+#, php-format
+msgid "Multilingual plugin info: %s"
+msgstr ""
+"If your administrator speak different languages you can use the Wordpress "
+"plugin %s for example. With this plugin every user can select his custom "
+"language in the profile settings or in the upper left corner."
+
+#: view/notice.php:11
+msgid "Change configuration"
+msgstr "Change Configuration"
+
+#: view/overview.php:18
+msgid "View on map"
+msgstr "View on Map"
+
+#: view/overview.php:28 view/widget.php:62
+msgid "Add new node"
+msgstr "Add new Node"
+
+#: view/overview.php:32
+msgid "Search"
+msgstr "Search"
+
+#: view/overview.php:37
+msgid "Node saved"
+msgstr "The node was saved successfully."
+
+#: view/widget.php:3
+msgid "Total nodes"
+msgstr "nodes in total"
+
+#: view/widget.php:10
+msgid "Last changed:"
+msgstr "Last Changed:"
+
+#: view/widget.php:58
+msgid "Goto node overview"
+msgstr "Goto Node Overview"
+
+#: class/ff3l.php:192
+msgid "Remove node confirm"
+msgstr "Do you really want to remove the selected node? It will be deleted "
+"from the Git-Repository and can only be restored via git."
+
+#: class/ff3l.php:193
+msgid "Remove nodes confirm"
+msgstr "Do you really want to remove the selected nodes? They will be deleted "
+"from the Git-Repository and can only be restored via git."
+
+#: class/ff3l.php:194
+msgid "Cancel"
+msgstr "Cancel"
+
+#: class/ff3l.php:195
+msgid "Error"
+msgstr "Error"
+
+#: class/ff3l.php:196
+msgid "Close"
+msgstr "Close"
+
+#: class/ff3l.php:318
+msgid "Invalid key"
+msgstr "Invalid key"
