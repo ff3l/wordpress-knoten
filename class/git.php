@@ -11,8 +11,8 @@ class FF3L_git
  public static function rename($old, $new)
  {
   chdir(FF3L::$gitRepository);
-  exec("git rm " . FF3L::$gitRepository . $old);
-  exec("git add " . FF3L::$gitRepository . $new);
+  exec("git rm \"" . FF3L::$gitRepository . $old . "\"");
+  exec("git add \"" . FF3L::$gitRepository . $new . "\"");
   echo exec("git commit -m 'Renamed {$old} into {$new}' --author=\"" . FF3L::$author . "\"");
   
  }
@@ -25,7 +25,7 @@ class FF3L_git
  public static function remove($node)
  {
   chdir(FF3L::$gitRepository);
-  exec("git rm " . FF3L::$gitRepository . $node);
+  exec("git rm \"" . FF3L::$gitRepository . $node . "\"");
   exec("git commit -m 'Removed Node {$node}' --author=\"" . FF3L::$author . "\"");
  }
 
@@ -40,7 +40,7 @@ class FF3L_git
  {
   chdir(FF3L::$gitRepository);
   $msg = ($isNew ? "Added Node " : "Updated Node ") . $node;
-  exec("git add " . FF3L::$gitRepository . $node);
+  exec("git add \"" . FF3L::$gitRepository . $node . "\"");
   exec("git commit -m '{$msg}' --author=\"" . FF3L::$author . "\"");
  }
 
