@@ -62,7 +62,7 @@ class NodeTable extends WP_List_Table
 
  public function set_order()
  {
-  $this->order = 'ASC';
+  $this->order = 'DESC';
   $getVal = filter_input(INPUT_GET, 'order', FILTER_SANITIZE_STRING);
   if(isset($getVal) && !empty($getVal) && in_array($getVal, array('ASC', 'DESC', 'asc', 'desc')))
   {
@@ -72,7 +72,7 @@ class NodeTable extends WP_List_Table
 
  public function set_orderby()
  {
-  $orderby = 'name';
+  $orderby = 'lastChange';
   if(isset($_GET['orderby']) && !empty($_GET['orderby']))
   {
    $orderby = filter_input(INPUT_GET, 'orderby', FILTER_SANITIZE_STRING);
@@ -229,8 +229,8 @@ class NodeTable extends WP_List_Table
  {
   if(!isset($_GET['orderby'])) // Default-Sortierung -> korrekte Darstellung des Spalten-Headers
   {
-   $_GET['orderby'] = "name";
-   $_GET['order'] = "asc";
+   $_GET['orderby'] = "lastChange";
+   $_GET['order'] = "desc";
   }
   echo parent::print_column_headers($with_id);
  }

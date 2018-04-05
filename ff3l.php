@@ -23,4 +23,10 @@ if(function_exists('add_action') && is_admin()) // nur im Administrationsbereich
  add_filter('plugin_locale', array('FF3L', 'localeFilter'), 10, 2);
  add_action('init', array('FF3L', 'init'));
  add_action('shutdown', array('FF3L', 'shutdown'));
+
+ #remove emoji detection
+ remove_action('wp_head', 'print_emoji_detection_script', 7);
+ remove_action('wp_print_styles', 'print_emoji_styles');
+ remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 }
