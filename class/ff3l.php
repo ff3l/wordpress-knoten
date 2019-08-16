@@ -387,6 +387,10 @@ class FF3L
    {
     $val = filter_var($val, FILTER_SANITIZE_STRING);
    }
+   if ($key==="name") {
+    $val = ltrim($val,"#"); 
+   }
+   $val = trim($val);
    $ret[$key] = $val;
    $_POST[$key] = $val;
   }
