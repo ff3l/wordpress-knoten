@@ -44,7 +44,7 @@ class NodeTable extends WP_List_Table
   foreach($nodes as $node) // Knoten anzeigen, wenn entweder kein Suchbegriff angegeben wurde, oder der Suchbegriff im Namen, E-Mail, Telefon-Nr, oder Schlüssel vorkommt
   {
    if((!isset($this->searchVal) || empty($this->searchVal)) //
-    || (strpos($node->name, $this->searchVal) !== false || strpos(strip_tags($node->email), $this->searchVal) !== false || strpos($node->telefon, $this->searchVal) !== false || strpos(strip_tags($node->nodeKey), $this->searchVal) !== false))
+    || (stripos($node->name, $this->searchVal) !== false || stripos(strip_tags($node->email), $this->searchVal) !== false || stripos($node->telefon, $this->searchVal) !== false || stripos(strip_tags($node->nodeKey), $this->searchVal) !== false))
    {
     $node->nameRaw = $node->name;
     $node->name = "<span class='nodeName'>{$node->name}</span>";
