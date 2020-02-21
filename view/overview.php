@@ -43,7 +43,7 @@ $selectedAction .= '</div>';
  </header>
 
  <?php
- if(current_user_can('manage_options'))
+// if(current_user_can('manage_options'))
  {
   $gitStatus = FF3L_git::getStatus();
   if(!empty($gitStatus))
