@@ -129,8 +129,15 @@ class FF3L
 
   $userID = get_current_user_id();
   $userInfo = get_userdata($userID);
-  self::$author = $userInfo->first_name . " " . $userInfo->last_name . " <" . $userInfo->user_email . ">";
-
+  if (! is_null($userInfo->first_name)) {
+   if (! is_null($userInfo->last_name)) {
+    self::$author = $userInfo->first_name . " " . $userInfo->last_name . " <" . $userInfo->user_email . ">";
+   } else {
+    self::$author = $userInfo->first_name . " <" . $userInfo->user_email . ">";
+   }
+  } else {
+   self::$author = $userInfo->user_login . " <" . $userInfo->user_email . ">";
+  }
   add_action('admin_menu', array('FF3L', 'addMenuEntries'));
   add_action('admin_enqueue_scripts', array('FF3L', 'loadResources'));
   add_action('wp_ajax_remove_nodes', array('FF3L', 'ajaxRemoveNodes'));
